@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+    int count = 0, i = 0; 
+    Scanner sc = new Scanner(System.in);
+    String str = sc.nextLine();
+        str = str.concat("\0");
+    char A[] = str.toCharArray();
+        while(A[i] != '\0'){
+            ++count;
+            ++i;
+        }
+        System.out.print(count);
+    }
+}
